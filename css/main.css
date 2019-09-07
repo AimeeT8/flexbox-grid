@@ -110,8 +110,32 @@ body {
   height: 100%;
 }
 
+header {
+    font-size: 3em;
+}
+
+header, footer {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+main {
+background-color: black;
+flex-flow: row wrap;
+font-size: 2em;
+height: 250px;
+width: 100%
+}
+
+header, footer, main {
+    display: flex;
+    border: 2.5px#eb34b4 solid;
+    margin: 4px;
+    padding: 9px;
+ }
+
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
   flex-flow: row wrap;
   display: flex;
   justify-content: space-between;
@@ -139,6 +163,12 @@ body {
   .div-1, .div-2 {
       border-right: 1px solid #555;
       padding-right: 30px;
+  }
+
+  footer {
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
   }
 
 
